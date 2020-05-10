@@ -4,7 +4,7 @@ import './header.styles.css';
 
 const Header = () => (
     <div className="header">
-        <span>Spotify Search Artists</span>
+        <span>Spotify Artist Search</span>
     </div>
 );
 

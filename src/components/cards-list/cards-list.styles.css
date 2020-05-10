@@ -15,3 +15,21 @@ h3 {
    color: #b3b3b3;
    margin: 0;
 }
+
+@media screen and (max-width: 1200px) {
+   .cards-container {
+      grid-template-columns: repeat(3,1fr);
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .cards-container {
+      grid-template-columns: repeat(2,1fr);
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .cards-container {
+      grid-template-columns: 1fr;
+   }
+}

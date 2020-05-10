@@ -1,3 +1,5 @@
+To run this App clone the repositry, inside the project folder run "npm install" then "npm start" which opens http://localhost:3000 in the browser.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

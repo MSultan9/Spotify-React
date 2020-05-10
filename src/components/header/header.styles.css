@@ -11,4 +11,5 @@
     padding-left: 5%;
     font-size: 24px;
     font-weight: bold;
+    white-space: nowrap;
 }
