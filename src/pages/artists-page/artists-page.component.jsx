@@ -1,11 +1,17 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import InputSearch from '../../components/input-search/input-search.component'
 import CardsList from '../../components/cards-list/cards-list.component'
 import { AccessTokenContext } from '../../providers/access-token.provider'
+import { ArtistsContext } from '../../providers/artists.provider'
 
 const ArtistsPage = () => {
     const { token } = useContext(AccessTokenContext)
+    const { savedArtists } = useContext(ArtistsContext)
     const [artists, setArtists] = useState([]);
+
+    useEffect(() => {
+        setArtists(savedArtists)
+    }, [savedArtists])
 
     function searchArtists(e) {
         e.preventDefault()
