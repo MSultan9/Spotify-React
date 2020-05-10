@@ -1,0 +1,47 @@
+.album-card {
+    padding: 20px 20px 16px;
+    background: #282828;
+    border-radius: 8px;
+    color: #b3b3b3;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.album-card img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    height: 250px;
+}
+
+.album-artists {
+    font-size: 14px;
+}
+
+.album-artists span:not(:last-child)::after {
+    content:", "
+}
+
+.release-date {
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.album-card a {
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 500px;
+    padding:10px 20px;
+    color: #FFF;
+    background-color: #1DB954;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-self: center;
+}
+
+.album-card a:hover {
+    background-color: #1aa34a;
+}
