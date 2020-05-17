@@ -1,8 +1,9 @@
 import React from 'react';
+import logo from '../../logo.svg'
 import './album-card.styles.css'
 
 const AlbumCard = ({ item }) => {
-    const image = item.images.length > 0 ? item.images[1].url : null;
+    const image = item.images.length > 0 ? item.images[1].url : logo;
 
     return (
         <div className="album-card">

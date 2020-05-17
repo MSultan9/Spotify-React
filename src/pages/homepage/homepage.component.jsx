@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from 'react';
-import './homepage.styles.css'
 import LoginButton from '../../components/login-button/login-button.component'
 import { AccessTokenContext } from '../../providers/access-token.provider'
 

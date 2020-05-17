@@ -29,7 +29,8 @@ const ArtistsPage = ({ history }) => {
 
     function checkScrollBottom() {
         if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 1) {
-            fetchArtists(next, token, 'append')
+            if (next != null)
+                fetchArtists(next, token, 'append')
         }
     }
 
