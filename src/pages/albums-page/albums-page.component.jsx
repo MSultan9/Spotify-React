@@ -32,8 +32,11 @@ const AlbumsPage = (props) => {
                         setAlbums([...albums, ...data.items])
                         setNext(data.next)
                     })
-                else if (response.status === 401)
-                    setModal(true)
+                else
+                    throw new Error(response.status)
+            })
+            .catch(() => {
+                setModal(true)
             })
     }
 

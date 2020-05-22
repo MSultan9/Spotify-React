@@ -60,8 +60,9 @@ const ArtistsPage = ({ history }) => {
                         setNext(data.artists.next)
                     })
                 else
-                    if (response.status === 401)
-                        setModal(true)
+                    throw new Error(response.status)
+            }).catch(() => {
+                setModal(true)
             })
     }
 
